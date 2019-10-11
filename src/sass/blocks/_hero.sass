@@ -14,7 +14,7 @@
       font-weight: 400
       line-height: 55px
       color: $text-color
-      margin-bottom: 40px
+      margin-bottom: 41px
     &__subtitle
       display: inline-block
       font-size: 20px
@@ -41,8 +41,9 @@
 @media (max-width: 1200px)
   .hero
     &-image
-      position: static
-      width: 48%
+      position: relative
+      right: -40px
+      
     &-block
       justify-content: space-between
       align-items: center
@@ -50,6 +51,9 @@
       margin-bottom: 44px
     &-text
       padding-right: 18px
+      &__title
+        font-size: 30px
+        
       &__subtitle
         margin-bottom: 28px
 @media (max-width: 992px)
@@ -63,18 +67,24 @@
       margin-bottom: 44px
     &-text
       padding-right: 18px
+      &__title
+        font-size: 24px
+        margin-bottom: 15px
+
       &__subtitle
         margin-bottom: 28px
 @media (max-width: 768px)
   .hero
     &-text
       &__title
-        font-size: 24px
+        text-align: center
         line-height: 1.4
         margin-bottom: 15px
       &__subtitle
+        text-align: center
         font-size: 16px
         margin-bottom: 28px
+        display: block
     &-list
       &__item
         margin-bottom: 20px
@@ -83,7 +93,29 @@
         font-style: 12px
       &__image
         margin-right: 15px
-      
+@media (max-width: 575px)
+  .hero
+    &-text
+      &__title
+        text-align: center
+      &__subtitle
+        text-align: center
+        display: block
+    &-list
+      &__item
+         display: block
+         text-align: center
+      &__image
+        margin: 0 auto
+        margin-bottom: 20px
+  .navbar
+    &-info
+      &__button-header
+        text-align: center
+        padding: 10px 15px
+        font-size: 16px
+
+        
 
      
       
